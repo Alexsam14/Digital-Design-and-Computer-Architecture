@@ -1,5 +1,0 @@
-set -tmpdir "C:/Users/HP/Desktop/Xilinx/usb-main/xst/projnav.tmp"
-set -xsthdpdir "C:/Users/HP/Desktop/Xilinx/usb-main/xst"
-elaborate
--ifn .prj
--ifmt mixed

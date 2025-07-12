@@ -1,1 +1,0 @@
-xst -intstyle ise -ifn "C:/Users/HP/Desktop/Xilinx/usb-main/usb_line_decoder.xst" -ofn "C:/Users/HP/Desktop/Xilinx/usb-main/usb_line_decoder.syr" 

@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/HP/Desktop/Xilinx/usb-main/usb_line_decoder_testbench_isim_beh.exe" -prj "C:/Users/HP/Desktop/Xilinx/usb-main/usb_line_decoder_testbench_beh.prj" "work.usb_line_decoder_testbench" "work.glbl" 
