@@ -1,0 +1,5 @@
+verilog work "../Lab2/FullAdder.v"
+verilog work "Thirty-TwoBitFullAdder.v"
+verilog work "ExtendMUX.v"
+verilog work "AdderSubtractorMUX.v"
+verilog work "ArithmeticUnit.v"

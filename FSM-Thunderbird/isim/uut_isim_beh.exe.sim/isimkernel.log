@@ -1,0 +1,28 @@
+Command line:
+   uut_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49703
+
+Fri Jun 13 22:47:12 2025
+
+
+ Elaboration Time: 0.078125 sec
+
+ Current Memory Usage: 5154.12 Meg
+
+ Total Signals          : 28
+ Total Nets             : 27
+ Total Signal Drivers   : 18
+ Total Blocks           : 4
+ Total Primitive Blocks : 3
+ Total Processes        : 25
+ Total Traceable Variables  : 39
+ Total Scalar Nets and Variables : 180
+
+ Total Simulation Time: 0.453125 sec
+
+ Current Memory Usage: 4996.83 Meg
+
+Fri Jun 13 22:49:02 2025
+

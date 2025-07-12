@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/HP/Desktop/Xilinx/FSM-Thunderbird/Thunderbird_tb_isim_beh.exe" -prj "C:/Users/HP/Desktop/Xilinx/FSM-Thunderbird/Thunderbird_tb_beh.prj" "work.Thunderbird_tb" "work.glbl" 

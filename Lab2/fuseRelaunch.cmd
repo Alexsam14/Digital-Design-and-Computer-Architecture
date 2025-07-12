@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/HP/Desktop/Xilinx/Lab2/FourBitAdder_isim_beh.exe" -prj "C:/Users/HP/Desktop/Xilinx/Lab2/FourBitAdder_beh.prj" "work.FourBitAdder" "work.glbl" 

@@ -1,0 +1,424 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: Thunderbird.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Thunderbird.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Thunderbird"
+Output Format                      : NGC
+Target Device                      : xc6slx4-3-tqg144
+
+---- Source Options
+Top Module Name                    : Thunderbird
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\HP\Desktop\Xilinx\FSM-Thunderbird\clk_div.v" into library work
+Parsing module <clk_div>.
+Analyzing Verilog file "C:\Users\HP\Desktop\Xilinx\FSM-Thunderbird\Thunderbird.v" into library work
+Parsing module <Thunderbird>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <Thunderbird>.
+
+Elaborating module <clk_div>.
+WARNING:HDLCompiler:413 - "C:\Users\HP\Desktop\Xilinx\FSM-Thunderbird\clk_div.v" Line 29: Result of 26-bit expression is truncated to fit in 25-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Thunderbird>.
+    Related source file is "C:\Users\HP\Desktop\Xilinx\FSM-Thunderbird\Thunderbird.v".
+        S0 = 3'b000
+        S1 = 3'b001
+        S2 = 3'b010
+        S3 = 3'b011
+        S4 = 3'b100
+        S5 = 3'b101
+        S6 = 3'b110
+    Found 3-bit register for signal <state_p>.
+    Found finite state machine <FSM_0> for signal <state_p>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 18                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 6                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 000                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <Thunderbird> synthesized.
+
+Synthesizing Unit <clk_div>.
+    Related source file is "C:\Users\HP\Desktop\Xilinx\FSM-Thunderbird\clk_div.v".
+    Found 25-bit register for signal <clk_count>.
+    Found 25-bit adder for signal <clk_count[24]_GND_2_o_add_1_OUT> created at line 29.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  25 D-type flip-flop(s).
+Unit <clk_div> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 25-bit adder                                          : 1
+# Registers                                            : 1
+ 25-bit register                                       : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <clk_div>.
+The following registers are absorbed into counter <clk_count>: 1 register on signal <clk_count>.
+Unit <clk_div> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 25-bit up counter                                     : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <state_p[1:3]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 100   | 100
+ 001   | 001
+ 010   | 010
+ 011   | 011
+ 101   | 101
+ 110   | 110
+-------------------
+
+Optimizing unit <Thunderbird> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Thunderbird, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 28
+ Flip-Flops                                            : 28
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Thunderbird.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 92
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 24
+#      LUT2                        : 2
+#      LUT3                        : 4
+#      LUT5                        : 2
+#      LUT6                        : 8
+#      MUXCY                       : 24
+#      VCC                         : 1
+#      XORCY                       : 25
+# FlipFlops/Latches                : 28
+#      FDC                         : 3
+#      FDR                         : 25
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 9
+#      IBUF                        : 3
+#      OBUF                        : 6
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx4tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              28  out of   4800     0%  
+ Number of Slice LUTs:                   41  out of   2400     1%  
+    Number used as Logic:                41  out of   2400     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     41
+   Number with an unused Flip Flop:      13  out of     41    31%  
+   Number with an unused LUT:             0  out of     41     0%  
+   Number of fully used LUT-FF pairs:    28  out of     41    68%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                          10
+ Number of bonded IOBs:                  10  out of    102     9%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 28    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 3.354ns (Maximum Frequency: 298.129MHz)
+   Minimum input arrival time before clock: 4.078ns
+   Maximum output required time after clock: 4.887ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.354ns (frequency: 298.129MHz)
+  Total number of paths / destination ports: 413 / 28
+-------------------------------------------------------------------------
+Delay:               3.354ns (Levels of Logic = 3)
+  Source:            state_p_FSM_FFd3 (FF)
+  Destination:       state_p_FSM_FFd1 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: state_p_FSM_FFd3 to state_p_FSM_FFd1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              8   0.447   1.031  state_p_FSM_FFd3 (state_p_FSM_FFd3)
+     LUT6:I3->O            1   0.205   0.580  clock_divider/out5_SW0_G (N10)
+     LUT3:I2->O            1   0.205   0.580  clock_divider/out5_SW01 (N3)
+     LUT6:I5->O            1   0.205   0.000  state_p_FSM_FFd1-In1 (state_p_FSM_FFd1-In)
+     FDC:D                     0.102          state_p_FSM_FFd1
+    ----------------------------------------
+    Total                      3.354ns (1.164ns logic, 2.190ns route)
+                                       (34.7% logic, 65.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 31 / 30
+-------------------------------------------------------------------------
+Offset:              4.078ns (Levels of Logic = 4)
+  Source:            left (PAD)
+  Destination:       state_p_FSM_FFd1 (FF)
+  Destination Clock: clk rising
+
+  Data Path: left to state_p_FSM_FFd1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.222   0.981  left_IBUF (left_IBUF)
+     LUT6:I0->O            1   0.203   0.580  clock_divider/out5_SW0_G (N10)
+     LUT3:I2->O            1   0.205   0.580  clock_divider/out5_SW01 (N3)
+     LUT6:I5->O            1   0.205   0.000  state_p_FSM_FFd1-In1 (state_p_FSM_FFd1-In)
+     FDC:D                     0.102          state_p_FSM_FFd1
+    ----------------------------------------
+    Total                      4.078ns (1.937ns logic, 2.141ns route)
+                                       (47.5% logic, 52.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 14 / 6
+-------------------------------------------------------------------------
+Offset:              4.887ns (Levels of Logic = 2)
+  Source:            state_p_FSM_FFd1 (FF)
+  Destination:       RB (PAD)
+  Source Clock:      clk rising
+
+  Data Path: state_p_FSM_FFd1 to RB
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             10   0.447   1.085  state_p_FSM_FFd1 (state_p_FSM_FFd1)
+     LUT3:I0->O            1   0.205   0.579  state_p__n0027<1>1 (RB_OBUF)
+     OBUF:I->O                 2.571          RB_OBUF (RB)
+    ----------------------------------------
+    Total                      4.887ns (3.223ns logic, 1.664ns route)
+                                       (66.0% logic, 34.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    3.354|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.13 secs
+ 
+--> 
+
+Total memory usage is 4486052 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

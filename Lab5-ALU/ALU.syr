@@ -1,0 +1,427 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Reading design: ALU.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ALU.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ALU"
+Output Format                      : NGC
+Target Device                      : xc6slx4-3-tqg144
+
+---- Source Options
+Top Module Name                    : ALU
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\HP\Desktop\Xilinx\Lab2\FullAdder.v" into library work
+Parsing module <FullAdder>.
+Analyzing Verilog file "C:\Users\HP\Desktop\Xilinx\Lab5-ALU\xor_gate.v" into library work
+Parsing module <xor_gate>.
+Analyzing Verilog file "C:\Users\HP\Desktop\Xilinx\Lab5-ALU\Thirty-TwoBitFullAdder.v" into library work
+Parsing module <ThirtyTwoBitFullAdder>.
+Analyzing Verilog file "C:\Users\HP\Desktop\Xilinx\Lab5-ALU\or_gate.v" into library work
+Parsing module <or_gate>.
+Analyzing Verilog file "C:\Users\HP\Desktop\Xilinx\Lab5-ALU\nor_gate.v" into library work
+Parsing module <nor_gate>.
+Analyzing Verilog file "C:\Users\HP\Desktop\Xilinx\Lab5-ALU\LogicMUX.v" into library work
+Parsing module <LogicMUX>.
+Analyzing Verilog file "C:\Users\HP\Desktop\Xilinx\Lab5-ALU\ExtendMUX.v" into library work
+Parsing module <ExtendMUX>.
+Analyzing Verilog file "C:\Users\HP\Desktop\Xilinx\Lab5-ALU\and_gate.v" into library work
+Parsing module <and_gate>.
+Analyzing Verilog file "C:\Users\HP\Desktop\Xilinx\Lab5-ALU\AdderSubtractorMUX.v" into library work
+Parsing module <AdderSubtractorMUX>.
+Analyzing Verilog file "C:\Users\HP\Desktop\Xilinx\Lab5-ALU\LogicUnit.v" into library work
+Parsing module <LogicUnit>.
+Analyzing Verilog file "C:\Users\HP\Desktop\Xilinx\Lab5-ALU\ArithmeticUnit.v" into library work
+Parsing module <ArithmeticUnit>.
+Analyzing Verilog file "C:\Users\HP\Desktop\Xilinx\Lab5-ALU\ALU.v" into library work
+Parsing module <ALU>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <ALU>.
+
+Elaborating module <ArithmeticUnit>.
+
+Elaborating module <AdderSubtractorMUX>.
+
+Elaborating module <ThirtyTwoBitFullAdder>.
+
+Elaborating module <FullAdder>.
+
+Elaborating module <ExtendMUX>.
+
+Elaborating module <LogicUnit>.
+
+Elaborating module <and_gate>.
+
+Elaborating module <or_gate>.
+
+Elaborating module <xor_gate>.
+
+Elaborating module <nor_gate>.
+
+Elaborating module <LogicMUX>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <ALU>.
+    Related source file is "C:\Users\HP\Desktop\Xilinx\Lab5-ALU\ALU.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <ALU> synthesized.
+
+Synthesizing Unit <ArithmeticUnit>.
+    Related source file is "C:\Users\HP\Desktop\Xilinx\Lab5-ALU\ArithmeticUnit.v".
+    Summary:
+	no macro.
+Unit <ArithmeticUnit> synthesized.
+
+Synthesizing Unit <AdderSubtractorMUX>.
+    Related source file is "C:\Users\HP\Desktop\Xilinx\Lab5-ALU\AdderSubtractorMUX.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <AdderSubtractorMUX> synthesized.
+
+Synthesizing Unit <ThirtyTwoBitFullAdder>.
+    Related source file is "C:\Users\HP\Desktop\Xilinx\Lab5-ALU\Thirty-TwoBitFullAdder.v".
+    Summary:
+	no macro.
+Unit <ThirtyTwoBitFullAdder> synthesized.
+
+Synthesizing Unit <FullAdder>.
+    Related source file is "C:\Users\HP\Desktop\Xilinx\Lab2\FullAdder.v".
+    Summary:
+Unit <FullAdder> synthesized.
+
+Synthesizing Unit <ExtendMUX>.
+    Related source file is "C:\Users\HP\Desktop\Xilinx\Lab5-ALU\ExtendMUX.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <ExtendMUX> synthesized.
+
+Synthesizing Unit <LogicUnit>.
+    Related source file is "C:\Users\HP\Desktop\Xilinx\Lab5-ALU\LogicUnit.v".
+    Summary:
+	no macro.
+Unit <LogicUnit> synthesized.
+
+Synthesizing Unit <and_gate>.
+    Related source file is "C:\Users\HP\Desktop\Xilinx\Lab5-ALU\and_gate.v".
+    Summary:
+	no macro.
+Unit <and_gate> synthesized.
+
+Synthesizing Unit <or_gate>.
+    Related source file is "C:\Users\HP\Desktop\Xilinx\Lab5-ALU\or_gate.v".
+    Summary:
+	no macro.
+Unit <or_gate> synthesized.
+
+Synthesizing Unit <xor_gate>.
+    Related source file is "C:\Users\HP\Desktop\Xilinx\Lab5-ALU\xor_gate.v".
+    Summary:
+Unit <xor_gate> synthesized.
+
+Synthesizing Unit <nor_gate>.
+    Related source file is "C:\Users\HP\Desktop\Xilinx\Lab5-ALU\nor_gate.v".
+    Summary:
+	no macro.
+Unit <nor_gate> synthesized.
+
+Synthesizing Unit <LogicMUX>.
+    Related source file is "C:\Users\HP\Desktop\Xilinx\Lab5-ALU\LogicMUX.v".
+    Summary:
+	inferred   3 Multiplexer(s).
+Unit <LogicMUX> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multiplexers                                         : 6
+ 32-bit 2-to-1 multiplexer                             : 6
+# Xors                                                 : 65
+ 1-bit xor2                                            : 64
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multiplexers                                         : 6
+ 32-bit 2-to-1 multiplexer                             : 6
+# Xors                                                 : 65
+ 1-bit xor2                                            : 64
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <ALU> ...
+
+Optimizing unit <ThirtyTwoBitFullAdder> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ALU, actual ratio is 7.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : ALU.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 115
+#      LUT2                        : 32
+#      LUT4                        : 21
+#      LUT5                        : 2
+#      LUT6                        : 59
+#      MUXF7                       : 1
+# IO Buffers                       : 101
+#      IBUF                        : 68
+#      OBUF                        : 33
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx4tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice LUTs:                  114  out of   2400     4%  
+    Number used as Logic:               114  out of   2400     4%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    114
+   Number with an unused Flip Flop:     114  out of    114   100%  
+   Number with an unused LUT:             0  out of    114     0%  
+   Number of fully used LUT-FF pairs:     0  out of    114     0%  
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                         101
+ Number of bonded IOBs:                 101  out of    102    99%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 22.817ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1726 / 33
+-------------------------------------------------------------------------
+Delay:               22.817ns (Levels of Logic = 20)
+  Source:            ALUOp<1> (PAD)
+  Destination:       Result<31> (PAD)
+
+  Data Path: ALUOp<1> to Result<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            83   1.222   2.013  ALUOp_1_IBUF (ALUOp_1_IBUF)
+     LUT5:I1->O            3   0.203   0.755  AU/FA/FA2/co1 (AU/FA/c2)
+     LUT6:I4->O            3   0.203   0.755  AU/FA/FA4/co1 (AU/FA/c4)
+     LUT6:I4->O            3   0.203   0.755  AU/FA/FA6/co1 (AU/FA/c6)
+     LUT6:I4->O            2   0.203   0.721  AU/FA/FA8/co1 (AU/FA/c8)
+     LUT4:I2->O            3   0.203   0.755  AU/FA/FA9/co1 (AU/FA/c9)
+     LUT6:I4->O            3   0.203   0.755  AU/FA/FA11/co1 (AU/FA/c11)
+     LUT6:I4->O            3   0.203   0.755  AU/FA/FA13/co1 (AU/FA/c13)
+     LUT6:I4->O            3   0.203   0.755  AU/FA/FA15/co1 (AU/FA/c15)
+     LUT6:I4->O            3   0.203   0.755  AU/FA/FA17/co1 (AU/FA/c17)
+     LUT6:I4->O            3   0.203   0.755  AU/FA/FA19/co1 (AU/FA/c19)
+     LUT6:I4->O            3   0.203   0.755  AU/FA/FA21/co1 (AU/FA/c21)
+     LUT6:I4->O            3   0.203   0.755  AU/FA/FA23/co1 (AU/FA/c23)
+     LUT6:I4->O            3   0.203   0.755  AU/FA/FA25/co1 (AU/FA/c25)
+     LUT6:I4->O            3   0.203   0.755  AU/FA/FA27/co1 (AU/FA/c27)
+     LUT6:I4->O            3   0.203   0.755  AU/FA/FA29/co1 (AU/FA/c29)
+     LUT6:I4->O            2   0.203   0.617  AU/FA/FA31/co1 (AU/FA/c31)
+     LUT4:I3->O            2   0.205   0.864  AU/FA/FA32/Mxor_s_xo<0>1 (AU/AddOut<31>)
+     LUT4:I0->O            1   0.203   0.579  Mmux_Result25 (Result_31_OBUF)
+     OBUF:I->O                 2.571          Result_31_OBUF (Result<31>)
+    ----------------------------------------
+    Total                     22.817ns (7.449ns logic, 15.368ns route)
+                                       (32.6% logic, 67.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.36 secs
+ 
+--> 
+
+Total memory usage is 4486052 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

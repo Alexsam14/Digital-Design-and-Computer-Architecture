@@ -1,0 +1,39 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/HP/Desktop/Xilinx/Lab5-ALU/ALU_isim_beh.exe -prj C:/Users/HP/Desktop/Xilinx/Lab5-ALU/ALU_beh.prj work.ALU work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/HP/Desktop/Xilinx/Lab5-ALU/../Lab2/FullAdder.v" into library work
+Analyzing Verilog file "C:/Users/HP/Desktop/Xilinx/Lab5-ALU/xor_gate.v" into library work
+Analyzing Verilog file "C:/Users/HP/Desktop/Xilinx/Lab5-ALU/Thirty-TwoBitFullAdder.v" into library work
+Analyzing Verilog file "C:/Users/HP/Desktop/Xilinx/Lab5-ALU/or_gate.v" into library work
+Analyzing Verilog file "C:/Users/HP/Desktop/Xilinx/Lab5-ALU/nor_gate.v" into library work
+Analyzing Verilog file "C:/Users/HP/Desktop/Xilinx/Lab5-ALU/LogicMUX.v" into library work
+Analyzing Verilog file "C:/Users/HP/Desktop/Xilinx/Lab5-ALU/ExtendMUX.v" into library work
+Analyzing Verilog file "C:/Users/HP/Desktop/Xilinx/Lab5-ALU/and_gate.v" into library work
+Analyzing Verilog file "C:/Users/HP/Desktop/Xilinx/Lab5-ALU/AdderSubtractorMUX.v" into library work
+Analyzing Verilog file "C:/Users/HP/Desktop/Xilinx/Lab5-ALU/LogicUnit.v" into library work
+Analyzing Verilog file "C:/Users/HP/Desktop/Xilinx/Lab5-ALU/ArithmeticUnit.v" into library work
+Analyzing Verilog file "C:/Users/HP/Desktop/Xilinx/Lab5-ALU/ALU.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module AdderSubtractorMUX
+Compiling module FullAdder
+Compiling module ThirtyTwoBitFullAdder
+Compiling module ExtendMUX
+Compiling module ArithmeticUnit
+Compiling module and_gate
+Compiling module or_gate
+Compiling module xor_gate
+Compiling module nor_gate
+Compiling module LogicMUX
+Compiling module LogicUnit
+Compiling module ALU
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 2 sub-compilation(s) to finish...
+Compiled 13 Verilog Units
+Built simulation executable C:/Users/HP/Desktop/Xilinx/Lab5-ALU/ALU_isim_beh.exe
+Fuse Memory Usage: 27260 KB
+Fuse CPU Usage: 499 ms

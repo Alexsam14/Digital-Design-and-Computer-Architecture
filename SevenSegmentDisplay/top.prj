@@ -1,0 +1,4 @@
+verilog work "FullAdder.v"
+verilog work "SevenSegmentDecoder.v"
+verilog work "FourBitAdder.v"
+verilog work "top.v"

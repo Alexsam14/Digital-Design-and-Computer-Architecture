@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/HP/Desktop/Xilinx/SevenSegmentDisplay/uut_isim_beh.exe" -prj "C:/Users/HP/Desktop/Xilinx/SevenSegmentDisplay/uut_beh.prj" "work.uut" "work.glbl" 

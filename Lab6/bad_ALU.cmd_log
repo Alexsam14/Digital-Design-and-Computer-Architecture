@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "C:/Users/HP/Desktop/Xilinx/Lab6/bad_ALU.xst" -ofn "C:/Users/HP/Desktop/Xilinx/Lab6/bad_ALU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 bad_ALU.ngc bad_ALU.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o bad_ALU_map.ncd bad_ALU.ngd bad_ALU.pcf 
+par -w -intstyle ise -ol high -mt off bad_ALU_map.ncd bad_ALU.ncd bad_ALU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bad_ALU.twx bad_ALU.ncd -o bad_ALU.twr bad_ALU.pcf 

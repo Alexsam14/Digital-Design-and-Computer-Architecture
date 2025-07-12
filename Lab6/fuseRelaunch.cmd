@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/HP/Desktop/Xilinx/Lab6/ALU_test_isim_beh.exe" -prj "C:/Users/HP/Desktop/Xilinx/Lab6/ALU_test_beh.prj" "work.ALU_test" "work.glbl" 

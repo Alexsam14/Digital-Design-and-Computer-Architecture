@@ -1,0 +1,6 @@
+verilog isim_temp "FullAdder.v"
+verilog isim_temp "SevenSegmentDecoder.v"
+verilog isim_temp "FourBitAdder.v"
+verilog isim_temp "top.v"
+verilog isim_temp "uut.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

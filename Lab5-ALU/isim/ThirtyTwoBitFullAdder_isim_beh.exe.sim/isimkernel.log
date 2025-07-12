@@ -1,0 +1,28 @@
+Command line:
+   ThirtyTwoBitFullAdder_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49767
+
+Mon May 26 09:35:24 2025
+
+
+ Elaboration Time: 0.09375 sec
+
+ Current Memory Usage: 5154.7 Meg
+
+ Total Signals          : 305
+ Total Nets             : 238
+ Total Signal Drivers   : 165
+ Total Blocks           : 34
+ Total Primitive Blocks : 33
+ Total Processes        : 166
+ Total Traceable Variables  : 18
+ Total Scalar Nets and Variables : 318
+
+ Total Simulation Time: 0.125 sec
+
+ Current Memory Usage: 5154.7 Meg
+
+Mon May 26 09:35:50 2025
+

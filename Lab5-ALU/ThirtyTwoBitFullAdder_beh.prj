@@ -1,0 +1,3 @@
+verilog work "../Lab2/FullAdder.v"
+verilog work "Thirty-TwoBitFullAdder.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"
